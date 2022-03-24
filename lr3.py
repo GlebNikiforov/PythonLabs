@@ -41,3 +41,5 @@ while (True):
         print("acos({}) = {}".format(num, math.acos(num)))
     elif (operation == 'exit'):
         break
+    else:
+        print("No such operator.")
