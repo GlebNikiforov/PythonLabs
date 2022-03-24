@@ -39,7 +39,7 @@ while (True):
     elif (operation == 'random'):
         print("Random number: {}".format(random.random()))
     elif (operation == 'factorial'):
-        num = float(input("Enter number: "))
+        num = int(input("Enter number (only integers): "))
         print("{}! = {}".format(num, math.factorial(num)))
     elif (operation == 'acos'):
         num = float(input("Enter number (from -1 to 1): "))
