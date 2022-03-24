@@ -5,6 +5,7 @@ print("\t+\t\tplus (for 2 numbers)")
 print("\t-\t\tminus (for 2 numbers)")
 print("\t/\t\tdivision (for 2 numbers)")
 print("\t*\t\tmultiply (for 2 numbers)")
+print("\t^\t\exponentiation (for 2 numbers)")
 print("\tabs\t\tabsolute value (for 1 number)")
 print("\trandom\t\trandom value from 0 to 1")
 print("\tfactorial\tfactorial (for 1 number)")
@@ -28,6 +29,10 @@ while (True):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
         print("{} * {} = {}".format(num1, num2, num1 * num2))
+    elif (operation == '^'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print("{} ^ {} = {}".format(num1, num2, num1 ** num2))
     elif (operation == 'abs'):
         num = float(input("Enter number: "))
         print("|{}| = {}".format(num, abs(num)))
