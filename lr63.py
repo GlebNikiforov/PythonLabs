@@ -83,3 +83,5 @@ def main():
             break
         else:
             print("No such operator.")
+
+main()
