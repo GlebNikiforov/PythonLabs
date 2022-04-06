@@ -1,84 +1,84 @@
 import random
 import math
 
-def PrintHelp():
+def printHelp():
     print("Possible operations: ")
     print("\thelp\t\tshow this message")
     print("\t+\t\tplus (for 2 numbers)")
     print("\t-\t\tminus (for 2 numbers)")
     print("\t/\t\tdivision (for 2 numbers)")
     print("\t*\t\tmultiply (for 2 numbers)")
-    print("\t^\t\exponentiation (for 2 numbers)")
+    print("\t^\t\texponentiation (for 2 numbers)")
     print("\tabs\t\tabsolute value (for 1 number)")
     print("\trandom\t\trandom value from 0 to 1")
     print("\tfactorial\tfactorial (for 1 number)")
     print("\tacos\t\tarccosine (for 1 number)")
     print("\texit\t\tclose program")
 
-def GetTwoFloatNumbers():
+def getTwoFloatNumbers():
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     return (num1, num2)
 
-def SumOperation():
-    num1, num2 = GetTwoFloatNumbers()
+def sumOperation():
+    num1, num2 = getTwoFloatNumbers()
     print("{} + {} = {}".format(num1, num2, num1 + num2))
 
-def MinusOperation():
-    num1, num2 = GetTwoFloatNumbers()
+def minusOperation():
+    num1, num2 = getTwoFloatNumbers()
     print("{} - {} = {}".format(num1, num2, num1 - num2))
 
-def DivisionOperation():
-    num1, num2 = GetTwoFloatNumbers()
-    print("{} - {} = {}".format(num1, num2, num1 - num2))
+def divisionOperation():
+    num1, num2 = getTwoFloatNumbers()
+    print("{} / {} = {}".format(num1, num2, num1 / num2))
 
-def MultiplyOperation():
-    num1, num2 = GetTwoFloatNumbers()
+def multiplyOperation():
+    num1, num2 = getTwoFloatNumbers()
     print("{} * {} = {}".format(num1, num2, num1 * num2))
 
-def PowerOperation():
-    num1, num2 = GetTwoFloatNumbers()
+def powerOperation():
+    num1, num2 = getTwoFloatNumbers()
     print("{} ^ {} = {}".format(num1, num2, num1 ** num2))
 
-def AbsoluteOperation():
+def absoluteOperation():
     num = float(input("Enter number: "))
     print("|{}| = {}".format(num, abs(num)))
 
-def RandomOperation():
+def randomOperation():
     print("Random number: {}".format(random.random()))
 
-def FactorialOperation():
+def factorialOperation():
     num = int(input("Enter number (only integers): "))
     print("{}! = {}".format(num, math.factorial(num)))
 
-def AcosOperation():
+def acosOperation():
     num = float(input("Enter number (from -1 to 1): "))
     print("acos({}) = {}".format(num, math.acos(num)))
 
 def main():
-    PrintHelp()
+    printHelp()
     while (True):
         operation = str(input("Enter an operation: "))
         if (operation == '+'):
-            SumOperation()
+            sumOperation()
         elif (operation == '-'):
-            MinusOperation()
+            minusOperation()
         elif (operation == '/'):
-            DivisionOperation()
+            divisionOperation()
         elif (operation == '*'):
-            MultiplyOperation()
+            multiplyOperation()
         elif (operation == '^'):
-            PowerOperation()
+            powerOperation()
         elif (operation == 'abs'):
-            AbsoluteOperation()
+            absoluteOperation()
         elif (operation == 'random'):
-            RandomOperation()
+            randomOperation()
         elif (operation == 'factorial'):
-            FactorialOperation()
+            factorialOperation()
         elif (operation == 'acos'):
-            AcosOperation()
+            acosOperation()
         elif (operation == 'help'):
-            PrintHelp()
+            printHelp()
         elif (operation == 'exit'):
             break
         else:
